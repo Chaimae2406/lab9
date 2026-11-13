@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - test
 
 jobs:
   lab9-basic-tests:
@@ -14,23 +15,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make validation script executable
-        run: chmod +x validate-data.sh
-
-      - name: Test valid name and mobile
+      - name: Test 1 - Valid details
         run: |
-          result=$(./validate-data.sh Chaimae 1234567890)
+          result=$(bash validate-data.sh Chaimae 1234567890)
           echo "Test 1: $result"
           [ "$result" = "PASS" ]
 
-      - name: Test invalid name
+      - name: Test 2 - Name within 20 characters
         run: |
-          result=$(./validate-data.sh Chaimaeabcdefghijkl 1234567890)
+          result=$(bash validate-data.sh Chaimaeabcdefghijkl 1234567890)
           echo "Test 2: $result"
-          [ "$result" = "FAIL" ]
+          [ "$result" = "PASS" ]
 
-      - name: Test invalid mobile
+      - name: Test 3 - Invalid mobile
         run: |
-          result=$(./validate-data.sh Chaimae 12345678901)
+          result=$(bash validate-data.sh Chaimae 12345678901)
           echo "Test 3: $result"
           [ "$result" = "FAIL" ]
+
