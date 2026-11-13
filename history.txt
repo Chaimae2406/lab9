@@ -1,0 +1,460 @@
+    1  mkdir devops 
+    2  cd devops
+    3  mkdir week1
+    4  cd week1
+    5  pwd
+    6  nano hellow.sh
+    7  chmod +x hellow.sh
+    8  ./hellow.sh
+    9  git init
+   10  https://github.com/Chaimae2406/devopsWeek1.git
+   11  git remote add origin https://github.com/Chaimae2406/devopsWeek1.git
+   12  git remote -v
+   13  git config --global user.name "Chaimae Sfioui"
+   14  git config --global user.email x00222190@mytudublin.ie
+   15  git config --global --list
+   16  git add hellow.sh
+   17  git commit -m "Initial hello script"
+   18  git branch -M main
+   19  git push -u origin main
+   20  git remote -v
+   21  git config --global --unset credential.helper
+   22  mkdir devops
+   23  cd devops
+   24  mkdir week1
+   25  cd week1
+   26  pwd
+   27  exit
+   28  cd devops
+   29  mkdir week1
+   30  cd week1
+   31  nano hellow.sh
+   32  cat hellow.sh
+   33  git add hellow.sh
+   34  git init -b main
+   35  git add hellow.sh
+   36  git commit hellow.sh
+   37  ssh-keygen -t ed25519 -C "x00222190@mytudublin.ie"
+   38  nano ~/.ssh/id_ed25519.pub
+   39  git remote -v
+   40  git commit -m "first version"
+   41  git push -u origin main
+   42  git config --global user.email x00222190@mytudublin.ie
+   43  git config --global user.name Chaimae2406
+   44  git commit -m "first version"
+   45  git remote -v
+   46  git commit -m "first version"
+   47  git push -u origin main
+   48  git remote -v
+   49  git remote remove origin
+   50  git remote add origin git@github.com:Chaimae2406/devopsWeek1.git
+   51  git remote -v
+   52  ssh -T git@github.com
+   53  git push -u origin main
+   54  nano hellow.sh
+   55  cat hellow.sh
+   56  git add hellow.sh
+   57  git commit -m "second version"
+   58  git push
+   59  clear
+   60  history
+   61  exit
+   62  mkdir week2
+   63  cd week2
+   64  exit
+   65  cd devops
+   66  mkdir week2
+   67  cd week2
+   68  git clone git@github.com:Chaimae2406/devopsWeek1.git
+   69  cd devopsWeek1
+   70  ./ hellow.sh
+   71  cat hallow.sh
+   72  cat hellow.sh
+   73  `
+   74  ]
+   75  nano hellow.sh
+   76  git add hellow.sh
+   77  git commit -m "Version 3"
+   78  git push origin main
+   79  nano hellow.sh
+   80  git add hellow.sh
+   81  git commit -m "Version 3"
+   82  git push origin main
+   83  git log --oneline
+   84  git tag ver3 aabbcc3
+   85  git tag ver2 1122332
+   86  git tag ver1 312f50b
+   87  git tag ver3 c0484ea
+   88  git tag ver2 77de1be
+   89  git tag ver1 312f50b
+   90  git tag
+   91  git push origin --tags
+   92  cd ~/devops
+   93  mkdir week2tag
+   94  cd week2tag
+   95  git clone git@github.com:Chaimae2406/devopsWeek1.git
+   96  cd devopsWeek1
+   97  git fetch --tags
+   98  git tag
+   99  git checkout tags/ver1 -b tag-test
+  100  git branch
+  101  nano hellow.sh
+  102  git add hellow.sh
+  103  git commit -m "Tag test branch update"
+  104  git push -u origin tag-test
+  105  ``
+  106  clear
+  107  history
+  108  cd ~/devops/devopsWeek1
+  109  #
+  110  cd ~/devops/devopsWeek1
+  111  ls
+  112  ``
+  113  cd devops
+  114  cd devopsweek1
+  115  cd devopsWeek1
+  116  ls
+  117  cd ~/devops/week1
+  118  ls
+  119  git status
+  120  `
+  121  git checkout -b CR101
+  122  nano cr101.sh
+  123  git add cr101.sh
+  124  git commit -m "Added CR101"
+  125  git push origin CR101
+  126  git checkout main
+  127  git checkout -b CR102
+  128  nano cr102.sh
+  129  git add cr102.sh
+  130  git commit -m "Added CR102"
+  131  git push origin CR102
+  132  git checkout main
+  133  git pull origin main
+  134  git merge CR102
+  135  chaimae24_2006@cloudshell:~/devops/week1 (noble-sun-479615-v9)$
+  136  chaimae24_2006@cloudshell:~/devops/week1 (noble-sun-479615-v9)$ 
+  137  git push origin main
+  138  git branch -d CR102
+  139  git push origin --delete CR102
+  140  clear
+  141  history
+  142  ssh-keygen -t ed25519 -C "chai-sf2506"
+  143  cat ~/.ssh/id_ed25519.pub
+  144  ssh-keygen -t ed25519 -C "chai-sf2506"
+  145  cat /home/chaimae24_2006/.ssh/id_ed25519_chai.pub
+  146  nano ~/.ssh/config
+  147  ssh -T github-chai
+  148  cd ~
+  149  git clone git@github-chai:Chaimae2406/devopsWeek1.git devopsWeek1-chai
+  150  cd devopsWeek1-chai
+  151  git config user.name "chai-sf2506"
+  152  git config user.email "chaimae24.2006@gmail.com"
+  153  git checkout -b CR103
+  154  nano cr103.sh
+  155  git add cr103.sh
+  156  git commit -m "Added CR103 by chai-sf2506"
+  157  git push origin CR103
+  158  git checkout main
+  159  git pull origin main
+  160  nano hellow.sh
+  161  git add hellow.sh
+  162  git commit -m "Added CR104 by chai-sf2506"
+  163  git push origin main
+  164  git push origin CR103
+  165  clear
+  166  history
+  167  echo hellow.sh
+  168  cd ~/devopsWeek1-chai
+  169  cat hellow.sh
+  170  history
+  171  ssh -T github-chai
+  172  history
+  173  ssh -T github-chai
+  174  git log
+  175  cd ~/devopsWeek1-chai
+  176  git log --oneline
+  177  git add .
+  178  git commit -m "Add count scripts"
+  179  git push origin main
+  180  sed -i 's/echo 10/echo TEN/' count10.sh
+  181  ./count10.sh
+  182  git add .
+  183  git commit -m "Fix count10, fixes #12"
+  184  git push origin main
+  185  history
+  186  cat ~/.ssh/id_ed25519.pub
+  187  cd ~
+  188  git clone git@github.com:pearse1104/X00222190.git
+  189  cd X00222190
+  190  echo "Test from X00222190" > test.txt
+  191  ls
+  192  git add test.txt
+  193  git commit -m "Added test file"
+  194  git config --global user.name "Chaimae Sfioui"
+  195  git config --global user.email "x00222190@mytudublin.ie"
+  196  git branch -M main
+  197  git push -u origin main
+  198  grep
+  199  help
+  200  history
+  201  clear
+  202  cd ~
+  203  mkdir v1
+  204  cd v1
+  205  git clone git@github.com:Chaimae2406/devopsProj.git
+  206  cd devopsProj
+  207  git checkout -b ONE-V1
+  208  ls
+  209  ``
+  210  nano count1.sh
+  211  git add count1.sh
+  212  git commit -m "ONE-V1 change"
+  213  git push origin ONE-V1
+  214  cd ~
+  215  mkdir v2
+  216  cd v2
+  217  git clone git@github.com:Chaimae2406/devopsProj.git
+  218  cd devopsProj
+  219  ``
+  220  git checkout -b ONE-V2
+  221  ``
+  222  nano count1.sh
+  223  git add count1.sh
+  224  git commit -m "ONE-V2 change"
+  225  git push origin ONE-V2
+  226  cd ~
+  227  mkdir mergeTest
+  228  cd mergeTest
+  229  git clone git@github.com:Chaimae2406/devopsProj.git
+  230  cd devopsProj
+  231  git fetch
+  232  git merge origin/ONE-V1
+  233  git push origin main
+  234  ``
+  235  git merge origin/ONE-V2
+  236  ``
+  237  nano count1.sh
+  238  git add count1.sh
+  239  git commit -m "Resolved the conflict keeping ONE-V1"
+  240  git push origin main
+  241  cd ~
+  242  mkdir v1-2
+  243  cd v1-2
+  244  git clone git@github.com:Chaimae2406/devopsProj.git
+  245  cd devopsProj
+  246  git checkout -b TWO-V1
+  247  nano count2.sh
+  248  git add count2.sh
+  249  git commit -m "TWO-V1 change"
+  250  git push origin TWO-V1
+  251  cd ~
+  252  mkdir v2-2
+  253  cd v2-2
+  254  git clone git@github.com:Chaimae2406/devopsProj.git
+  255  cd devopsProj
+  256  git checkout -b TWO-V2
+  257  nano count2.sh
+  258  git add count2.sh
+  259  git commit -m "TWO-V2 change"
+  260  git push origin TWO-V2
+  261  history
+  262  cd~
+  263  cd ~
+  264  $ sudo apt-get install ruby-full
+  265  ruby --version
+  266  puts "Hello World"
+  267  nano hello.rb
+  268  puts "Hello World"
+  269  ruby hello.rb
+  270  sudo apt
+  271  sudo install netcat
+  272  sudo apt update
+  273  sudo apt install netcat-openbsd
+  274  ``
+  275  nc -vz google.com 80
+  276  top
+  277  df -h
+  278  tail -n 100
+  279  tail -f
+  280  ps
+  281  top
+  282  df -h
+  283  tail -n 100
+  284  top
+  285  df -h
+  286  tail -n 100
+  287  ps aux
+  288  tail -n 100 app.log
+  289  pwd
+  290  whoami
+  291  ls 
+  292  ls -a
+  293  df -h
+  294  top
+  295  du -sh
+  296  df -h
+  297  tail -f
+  298  du -sh
+  299  df -h
+  300  du -sh
+  301  ssh
+  302  top
+  303  df -h
+  304  du -sh
+  305  top
+  306  tail -f
+  307  curl google.com
+  308  git config --global user.name "Chaimae2406"
+  309  git config --global user.email "chaimae24.2006@gmail.com"
+  310  git config --global --list
+  311  git config --global user.name "Chaimae2406"
+  312  git config --global user.email "chaimae24.2006@gmail.com"
+  313  ssh -T git@github.com
+  314  git remote -v
+  315  git clone https://github.com/pearse1104/x00222190
+  316  git log
+  317  clear
+  318  git log --oneline
+  319  git clone https://github.com/pearse1104/X00222190.git
+  320  cd X00222190
+  321  pwd
+  322  git status
+  323  clear
+  324  git status
+  325  echo "TestingCA1" > test.txt
+  326  git status
+  327  git add test.txt
+  328  git commit -m "Added test file"
+  329  git push origin main
+  330  cd X00222190
+  331  git status
+  332  git config --global user.name "Chaimae2406"
+  333  git config --global user.email "x00222190@mytudublin.ie"​‌
+  334  git config --global --list
+  335  echo "TestingCA1 part2" > test.txt
+  336  git status
+  337  git add test.txt
+  338  git commit -m "Added test file"
+  339  clear
+  340  git status
+  341  clear
+  342  history
+  343  clear
+  344  ssh -T git@github.com
+  345  clear
+  346  git status
+  347  gh auth status
+  348  ssh -T git@github.com
+  349  git remote -v
+  350  clear
+  351  git clone pearse1104/CA1-CLOUD
+  352  git clone https://github.com/pearse1104/CA1-CLOUD.git
+  353  ls 
+  354  bash user.sh
+  355  ./ user.sh
+  356  git status 
+  357  ls 
+  358  bash test.txt
+  359  chaimae24_2006@cloudshell:~/X00222190$ git clone https://github.com/pearse1104/CA1-CLOUD.git
+  360  git clone https://github.com/pearse1104/CA1-CLOUD.git
+  361  ls
+  362  says i need to use bash user.sh to open a command
+  363  clear
+  364  cd CA1-CLOUD
+  365  ls 
+  366  bash user.sh
+  367  ls
+  368  git status 
+  369  pwd
+  370  ls
+  371  git status
+  372  cd ~/X00222190
+  373  git remote -v
+  374  git status
+  375  git add .
+  376  git commit -m "Add CA1 files"
+  377  git push origin main
+  378  git status
+  379  push the files on to cd ~/X00222190
+  380  git remote -v
+  381  cd ~/X00222190
+  382  git remote -v
+  383  git remote set-url origin git@github.com:Chaimae2406/devopsCA1cloud.git
+  384  git remote -v
+  385  git status
+  386  git add .
+  387  git commit -m "Add CA1 files"
+  388  git push -u origin main
+  389  git status
+  390  ls
+  391  git clone https://github.com/pearse1104/X00222190
+  392  cd ~/X00222190/CA1-CLOUD
+  393  git remote -v
+  394  git status
+  395  git remote set-url origin git@github.com:Chaimae2406/devopsCA1cloud.git
+  396  git remote -v
+  397  git add myID.txt
+  398  git status
+  399  git commit -m "added myID.txt"
+  400  git push -u origin main
+  401  git status
+  402  find ~ -name "user.sh"
+  403  ls
+  404  cp ~/Q1/user.sh ~/X00222190/CA1-CLOUD/
+  405  bash user.sh
+  406  git pull origin main --allow-unrelated-histories
+  407  :wq
+  408  git push -u origin main
+  409  git pull origin main --no-rebase --allow-unrelated-histories
+  410  git --version
+  411  gh --version
+  412  gh auth login
+  413  gh repo create lab9 --public
+  414  gh repo view lab9
+  415  gh label create EPIC --repo Chaimae2406/lab9 --color 7057ff --description "Epic issue"
+  416  gh label list --repo Chaimae2406/lab9
+  417  gh issue create --repo Chaimae2406/lab9 --title "do lab9" --body "Complete all tasks for Lab 9." --label EPIC
+  418  gh issue list --repo Chaimae2406/lab9
+  419  gh issue create   --repo Chaimae2406/lab9   --title "create validate-data script"   --body "Create a bash script that accepts a name and mobile number and validates their lengths."   --label enhancement   --assignee @me
+  420  gh label create enhancement --repo Chaimae2406/lab9 --color 84b6eb --description "Enhancement"
+  421  git clone https://github.com/Chaimae2406/lab9.git
+  422  cd lab9
+  423  pwd
+  424  nano validate-data.sh
+  425  chmod +x validate-data.sh
+  426  ./validate-data.sh Chaimae 1234567890
+  427  ./validate-data.sh Chaimaeabcdefghijkl4567890
+  428  ./validate-data.sh Chaimae 12345678901
+  429  .github/workflows/basictests.yml
+  430  ./validate-data.sh Chaimaeabcdefghijkl 1234567890
+  431  .github/workflows/basictests.yml
+  432  mkdir -p .github/workflows
+  433  nano .github/workflows/basictests.yml
+  434  ls -R
+  435  ls -la .github/workflows/
+  436  cat .github/workflows/basictests.yml
+  437  cat validate-data.sh
+  438  ls -la .github/workflows/
+  439  cat validate-data.sh
+  440  gh issue create   --repo Chaimae2406/lab9   --title "create yaml test script"   --body "Create the GitHub Actions workflow to run the three validation tests."   --label enhancement   --assignee @me
+  441  git add .
+  442  git commit -m "Add validation script and GitHub Actions workflow"
+  443  git branch -M main
+  444  git push -u origin main
+  445  ls -la .github/workflows/
+  446  gh issue create   --repo Chaimae2406/lab9   --title "create lab9 project view"   --body "Create a GitHub project called lab9 with one table view containing LABEL, TITLE and ASSIGNEE."   --label enhancement   --assignee @me
+  447  gh issue create   --repo Chaimae2406/lab9   --title "create test branch and update validation"   --body "Create a test branch, change the maximum name length to 20 and configure GitHub Actions to run on pushes to main and test."   --label enhancement   --assignee @me
+  448  git checkout -b test
+  449  nano validate-data.sh
+  450  ./validate-data.sh Chaimaeabcdefghijkl 1234567890
+  451  cd ~/lab9
+  452  git branch
+  453  nano .github/workflows/basictests.yml
+  454  cat validate-data.sh
+  455  git add .
+  456  git commit -m "Enable GitHub Actions on the  test branches"
+  457  git push -u origin test
+  458  ls -la
+  459  ls -la history
+  460  history > history.txt
